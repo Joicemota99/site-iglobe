@@ -38,16 +38,6 @@ const FinalCTA = () => {
             Falar com atendente
           </Link>
         </div>
-        <div className={styles.Logo}>
-             <Image
-        src="/bg-hero-3.png" // Você precisará colocar uma imagem de fundo aqui
-        alt="Fundo abstrato de tecnologia"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-        className={styles.bgImage}
-      />
-        </div>
       </div>
     </section>
   );

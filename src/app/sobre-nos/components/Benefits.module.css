@@ -1,87 +1,81 @@
 /* src/app/sobre-nos/Benefits.module.css */
 
 .benefitsSection {
-  background-color: #f9f5f2; /* Cor clara da paleta */
+  background-color: #f9f5f2;
 }
 
 .sectionTitle {
   font-size: 2rem;
   font-weight: 700;
-  color: #161616; /* Cor escura da paleta */
+  color: #161616;
   margin-bottom: 2rem;
 }
 
 .titleUnderline {
   width: 5rem;
   height: 4px;
-  background-color: #04169e; /* Cor azul da paleta */
+  background-color: #04169e;
   margin-top: 0.5rem;
 }
 
 .cardsContainer {
-  /* GARANTE A ROLAGEM HORIZONTAL EM TODAS AS TELAS */
-  display: flex; /* Garante que os cards fiquem em linha */
+  display: flex;
   gap: 1.5rem;
-  overflow-x: scroll; /* Permite a rolagem horizontal */
+  overflow-x: scroll;
   padding-bottom: 1rem;
-  -webkit-overflow-scrolling: touch; /* Melhora a rolagem em iOS */
-  /* Ajuste para rolagem rápida: 'x mandatory' garante o snap, mas é mais restritivo. 
-     Vamos usar 'x proximity' para uma sensação mais suave. */
-  scroll-snap-type: x proximity; 
-  
-  /* Adiciona padding horizontal para que o scroll snap funcione bem */
-  padding-left: 1rem; 
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  padding-left: 1rem;
   padding-right: 1rem;
 }
 
-/* Oculta a barra de rolagem em navegadores baseados em WebKit (Chrome, Safari) */
 .cardsContainer::-webkit-scrollbar {
   display: none;
 }
 
-/* Largura e comportamento dos cards em telas PEQUENAS (Mobile) */
 .card {
-  flex-shrink: 0; 
-  /* Define a largura para que apenas um card caiba e o próximo fique visível */
-  width: 90vw; 
-  scroll-snap-align: start; 
-
-  position: relative;
-  background-color: #04169e; /* Cor azul da paleta */
+  flex-shrink: 0;
+  width: 90vw;
+  scroll-snap-align: start;
+  position: relative; /* OBRIGATÓRIO para que a imagem de fundo funcione */
+  background-color: #04169e;
   color: white;
   border-radius: 1rem;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   height: 400px;
 }
 
-/* Em telas maiores (Tablet/Desktop), ajustamos a largura para exibir 3 */
 @media (min-width: 768px) {
   .card {
-    /* CORREÇÃO PARA FORÇAR ROLAGEM: Ajustamos o cálculo para que 3 cards e os gaps caibam, 
-       deixando o 4º card forçar a rolagem. */
-    min-width: calc(33.333% - 1rem); 
-    width: calc(33.333% - 1rem); 
+    min-width: calc(33.333% - 1rem);
+    width: calc(33.333% - 1rem);
     scroll-snap-align: start;
   }
-
   .cardsContainer {
-    display: flex; 
+    display: flex;
     overflow-x: scroll;
-    /* Remove o padding lateral no desktop, pois o container principal já tem,
-       mas precisamos garantir que o contêiner não fique muito apertado. */
     padding-left: 0;
     padding-right: 0;
   }
 }
 
+.cardImage {
+  object-fit: cover;
+  z-index: 0; /* Coloca a imagem por baixo do conteúdo */
+  filter: brightness(0.6); /* Escurece a imagem para o texto ser legível */
+}
+
 .cardContent {
+  position: absolute; /* Permite que o conteúdo fique por cima da imagem */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1;
+  z-index: 1; /* Garante que o conteúdo fique acima da imagem */
 }
 
 .cardTitle {
@@ -91,34 +85,17 @@
 }
 
 .cardButton {
-  background-color: #ff7900; /* Cor laranja da paleta */
+  background-color: #ff7900;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   font-weight: 600;
   text-decoration: none;
   text-align: center;
-  margin-top: 1rem;
   transition: background-color 0.3s ease;
+  z-index: 2; /* Garante que o botão fique acima de tudo */
 }
 
 .cardButton:hover {
   background-color: #ff912a;
-}
-
-.imageContainer {
-  position: relative;
-  width: 100%;
-  height: 200px;
-}
-
-@media (min-width: 768px) {
-  .imageContainer {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%;
-    z-index: -1;
-  }
 }

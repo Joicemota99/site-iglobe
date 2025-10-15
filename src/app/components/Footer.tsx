@@ -7,7 +7,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-35 py-16">
         <div className={styles.footerGrid}>
           {/* Coluna 1: Logo e Descrição */}
           <div className={styles.footerColumn}>
@@ -24,13 +24,13 @@ const Footer = () => {
             </p>
             <div className={styles.socialIcons}>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <Image src="/icon-instagram.svg" alt="Instagram" width={24} height={24} />
+                <Image src="/icons8-instagram.svg" alt="Instagram" width={24} height={24} />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <Image src="/icon-facebook.svg" alt="Facebook" width={24} height={24} />
+                <Image src="/icons8-facebook.svg" alt="Facebook" width={24} height={24} />
               </a>
               <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
-                <Image src="/icon-whatsapp.svg" alt="WhatsApp" width={24} height={24} />
+                <Image src="/icons8-whatsapp-laranja.svg" alt="WhatsApp" width={24} height={24} />
               </a>
             </div>
           </div>

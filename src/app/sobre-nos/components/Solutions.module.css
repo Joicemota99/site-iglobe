@@ -1,0 +1,207 @@
+/* src/app/sobre-nos/Solutions.module.css */
+
+.solutionsSection {
+  background-color: #f9f5f2; /* Cor de fundo clara da paleta */
+  color: #161616;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.titleUnderline {
+  width: 5rem;
+  height: 4px;
+  background-color: #04169e;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #161616;
+  margin-bottom: 2rem;
+}
+
+.cardsGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  /* CORREÇÃO AQUI: Ajusta o grid principal para acomodar o card grande e o grupo de 3 cards */
+  .cardsGrid {
+    grid-template-columns: 4fr 6fr; /* 40% para o card principal, 60% para o grupo secundário */
+    gap: 1rem;
+    height: 600px;
+    align-items: stretch;
+  }
+}
+
+/* --- ESTILOS DO CARD PRINCIPAL --- */
+
+.mainCardWrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1024px) {
+  /* O card principal se torna uma linha de duas colunas (35% imagem, 65% conteúdo) */
+  .mainCardWrapper {
+    flex-direction: row;
+  }
+}
+
+.mainImageColumn {
+  position: relative;
+  background-color: #161616;
+  height: 250px; /* Altura em mobile */
+}
+
+@media (min-width: 1024px) {
+  .mainImageColumn {
+    flex-basis: 35%; /* Ajuste para caber */
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+
+.cardTitleOverlay {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  z-index: 2;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.mainContentColumn {
+  background-color: #04169e; /* Cor azul profunda */
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainCardTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.mainCardText {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.mainCardButton {
+  background-color: white;
+  color: #04169e;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.mainCardButton:hover {
+  background-color: #e0e0e0;
+}
+
+.mainCardFeature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
+}
+
+.mainCardFeatureImage {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mainCardFeatureText {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.mainCardFeatureDetail {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.3;
+}
+
+/* --- ESTILOS DOS CARDS SECUNDÁRIOS --- */
+
+.secondaryCardsGroup {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  /* CORREÇÃO AQUI: Usa Flexbox para colocar os três cards lado a lado e esticá-los */
+  .secondaryCardsGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 1rem;
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1024px) {
+    /* CORREÇÃO AQUI: Força os cards a ocuparem 1/3 do espaço disponível e a terem a altura total do grupo (600px) */
+    .card {
+        flex: 1 1 33.333%; /* Flex-grow, flex-shrink, flex-basis */
+        height: 100%; /* Ocupa a altura do secondaryCardsGroup (600px) */
+    }
+}
+
+.cardImage {
+  z-index: 0;
+  filter: brightness(0.7);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  z-index: 1;
+  line-height: 1.2;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}

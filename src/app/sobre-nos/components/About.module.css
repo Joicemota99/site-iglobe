@@ -1,0 +1,67 @@
+/* src/app/sobre-nos/About.module.css */
+
+.aboutSection {
+  background-color: #f9f5f2; /* Cor clara da paleta */
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #161616; /* Cor escura da paleta */
+  margin-bottom: 0.5rem;
+}
+
+.titleUnderline {
+  width: 5rem;
+  height: 4px;
+  background-color: #04169e; /* Cor azul da paleta */
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #161616;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.imageGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .imageGrid {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+.mainImageContainer {
+  position: relative;
+  height: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .mainImageContainer {
+    height: 450px;
+  }
+}
+
+.secondaryImageContainer {
+  position: relative;
+  height: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  filter: brightness(0.85);
+}

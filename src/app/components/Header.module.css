@@ -1,0 +1,49 @@
+.navLink {
+  color: #161616; /* Cor escura do texto (quase preto) */
+  padding: 0.5rem ; /* Espaçamento vertical */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #ff7900; /* Cor laranja da paleta no hover */
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff7900;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Estilos para o menu responsivo */
+@media (max-width: 768px) {
+  .mobileMenu {
+    display: none;
+  }
+
+  .mobileMenuOpen {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobileMenu a {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eee;
+  }
+}

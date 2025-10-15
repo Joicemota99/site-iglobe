@@ -1,0 +1,74 @@
+/* src/components/Footer.module.css */
+
+.footer {
+  background-color: #161616; /* Cor escura da paleta */
+  color: #f9f5f2; /* Cor clara da paleta para o texto */
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoLink {
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.columnTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footerNav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footerLink {
+  color: #f9f5f2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #ff7900;
+}
+
+.contactInfo p {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.copyrightBar {
+  background-color: #0d0d0d;
+  font-size: 0.875rem;
+  color: #888;
+}

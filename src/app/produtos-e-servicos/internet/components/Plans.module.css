@@ -1,0 +1,87 @@
+/* src/app/produtos-e-servicos/internet/Plans.module.css */
+
+.plansSection {
+  background-color: #161616; /* Dark color from the palette */
+  color: white;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.titleUnderline {
+  width: 5rem;
+  height: 4px;
+  background-color: #ff7900; /* Orange color from the palette */
+  margin-top: 0.5rem;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.planCard {
+  background-color: #04169e; /* Blue color from the palette */
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.planSpeed {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.planSubtitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.planPrice {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.priceValue {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.planButton {
+  background-color: #ff7900; /* Orange color from the palette */
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.planButton:hover {
+  background-color: #ff912a;
+}

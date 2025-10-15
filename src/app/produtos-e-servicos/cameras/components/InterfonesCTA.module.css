@@ -1,0 +1,49 @@
+/* src/app/produtos-e-servicos/interfones/InterfonesCTA.module.css */
+
+.ctaSection {
+  background-color: #161616; /* Cor escura da paleta */
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.buttonWrapper {
+  margin-top: 1rem;
+}
+
+.ctaButton {
+  background-color: #04169e; /* Cor azul da paleta */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  /* Garante o alinhamento do ícone */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ctaButton:hover {
+  background-color: #0022d1; /* Tom de azul ligeiramente mais claro */
+}
+
+.whatsappIcon {
+  /* Altera a cor do ícone SVG para branco */
+  stroke: white;
+  width: 1.25rem;
+  height: 1.25rem;
+}

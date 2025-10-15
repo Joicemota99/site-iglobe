@@ -1,0 +1,58 @@
+/* src/app/sobre-nos/FinalCTA.module.css */
+
+.ctaSection {
+  background-color: #f9f5f2; /* Cor clara da paleta */
+  color: #161616; /* Cor escura da paleta */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.checkIcon {
+  color: #04169e; /* Cor azul profunda da paleta */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.instruction {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.buttonWrapper {
+  margin-top: 1rem;
+}
+
+.ctaButton {
+  background-color: #ff7900; /* Cor laranja da paleta */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #ff912a;
+}

@@ -5,7 +5,7 @@ import styles from './InterfonesCTA.module.css';
 const InterfonesCTA = () => {
   return (
     <section className={styles.ctaSection}>
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-35 py-16">
         <h2 className={styles.title}>
           Instale seu interfone com quem entende do <br />
           assunto. Orçamento grátis pelo WhatsApp.

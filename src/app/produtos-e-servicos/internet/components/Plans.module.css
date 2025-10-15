@@ -1,14 +1,14 @@
 /* src/app/produtos-e-servicos/internet/Plans.module.css */
 
 .plansSection {
-  background-color: #161616; /* Dark color from the palette */
+  background-color: white; /* Dark color from the palette */
   color: white;
 }
 
 .sectionTitle {
   font-size: 2rem;
   font-weight: 700;
-  color: white;
+  color: #161616;
   margin-bottom: 2rem;
 }
 

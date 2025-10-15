@@ -30,7 +30,7 @@ const Testimonials = () => {
               </div>
               <div className={styles.authorImage}>
                 <Image
-                  src="/testimonial-1.jpg" // Troque pela sua imagem
+                  src="/tatiane.png" // Troque pela sua imagem
                   alt="Foto de Beatriz"
                   layout="fill"
                   objectFit="cover"
@@ -47,7 +47,7 @@ const Testimonials = () => {
               </div>
               <div className={styles.authorImage}>|
                 <Image
-                  src="/testimonial-2.jpg" // Troque pela sua imagem
+                  src="/valmir.png" // Troque pela sua imagem
                   alt="Foto de João Gustavo"
                   layout="fill"
                   objectFit="cover"

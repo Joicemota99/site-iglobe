@@ -28,7 +28,7 @@ const BenefitsInternet = () => {
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src="/card-internet-1.jpg" // Troque pela sua imagem
+                src="/card-image-1.png" // Troque pela sua imagem
                 alt="Internet estável"
                 layout="fill"
                 objectFit="cover"
@@ -51,7 +51,7 @@ const BenefitsInternet = () => {
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src="/card-internet-2.jpg" // Troque pela sua imagem
+                src="/benefits-internet-2.png" // Troque pela sua imagem
                 alt="Contratação fácil"
                 layout="fill"
                 objectFit="cover"
@@ -73,7 +73,7 @@ const BenefitsInternet = () => {
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src="/card-internet-3.jpg" // Troque pela sua imagem
+                src="/benefits-internet.png" // Troque pela sua imagem
                 alt="Sem análise de crédito"
                 layout="fill"
                 objectFit="cover"

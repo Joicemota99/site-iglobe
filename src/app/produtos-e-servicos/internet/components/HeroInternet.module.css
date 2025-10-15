@@ -12,8 +12,8 @@
 }
 
 .heroImage {
-  z-index: -2;
-  filter: brightness(0.4);
+  z-index: -1;
+  filter: brightness(1.0);
 }
 
 .heroOverlay {
@@ -38,26 +38,32 @@
 }
 
 .heroCard {
-  background-color: white;
+  /* CORREÇÃO AQUI */
+  background-color: transparent; /* Fundo transparente */
   border-radius: 1rem;
   padding: 2.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: none; /* Remove a sombra */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Adiciona uma borda branca sutil */
   max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  color: white; /* Muda a cor do texto para branco para contraste */
 }
 
 .title {
+  /* CORREÇÃO AQUI: Forçamos a font-family e ajustamos a declaração */
+  font-family: 'Inter', sans-serif; /* Força o uso da fonte */
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 500; /* Mantém o negrito */
   line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
   font-size: 1rem;
   font-weight: 500;
-  color: #888;
+  color: rgba(255, 255, 255, 0.8); /* Ajusta a cor para contraste no fundo escuro */
 }
 
 .whatsappButton {

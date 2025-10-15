@@ -8,7 +8,7 @@ const HeroInternet = () => {
   return (
     <section className={styles.heroSection}>
       <Image
-        src="/hero-internet.jpg" // Troque por sua imagem de fundo
+        src="/hero-internet.png" // Troque por sua imagem de fundo
         alt="Pessoa jogando em um setup de tecnologia"
         layout="fill"
         objectFit="cover"

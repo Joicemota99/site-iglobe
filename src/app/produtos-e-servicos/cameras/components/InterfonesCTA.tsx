@@ -5,7 +5,7 @@ import styles from './InterfonesCTA.module.css';
 const InterfonesCTA = () => {
   return (
     <section className={styles.ctaSection}>
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-45 py-16">
         <h2 className={styles.title}>
           Monitore em tempo real e de qualquer lugar. Oferecemos sistemas de câmeras de alta qualidade, ajustados ao tamanho e à demanda do seu ambiente,
           para você ter total controle e tranquilidade.

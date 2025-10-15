@@ -1,8 +1,8 @@
 /* src/app/produtos-e-servicos/interfones/InterfonesCTA.module.css */
 
 .ctaSection {
-  background-color: #161616; /* Cor escura da paleta */
-  color: white;
+  background-color: white; /* Cor escura da paleta */
+  color: #161616;
 }
 
 .title {

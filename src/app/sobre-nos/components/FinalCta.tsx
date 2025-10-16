@@ -36,7 +36,7 @@ const FinalCTA = () => {
             </p>
 
             <div className={styles.buttonWrapper}>
-              <Link href="https://wa.me/5571987955190" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
                 Falar com atendente
               </Link>
             </div>

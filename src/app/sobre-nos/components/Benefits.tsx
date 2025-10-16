@@ -27,7 +27,7 @@ const Benefits = () => {
                 Rápida <br />
                 e Estável
               </h3>
-              <Link href="/planos" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
             </div>
@@ -46,7 +46,7 @@ const Benefits = () => {
                 Atendimento <br />
                 em até 24h
               </h3>
-              <Link href="/contato" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
             </div>
@@ -66,7 +66,7 @@ const Benefits = () => {
                 técnico via <br />
                 WhatsApp
               </h3>
-              <Link href="/suporte" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
             </div>

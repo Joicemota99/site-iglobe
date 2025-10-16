@@ -13,7 +13,7 @@ const InterfonesCTA = () => {
 
         <div className={styles.buttonWrapper}>
           <Link
-            href="https://wa.me/5571987955190" // Número de contato do cliente
+            href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" // Número de contato do cliente
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaButton}

@@ -47,3 +47,74 @@
     border-bottom: 1px solid #eee;
   }
 }
+
+/* Estilos existentes */
+.navLink {
+  color: #161616; /* Cor escura do texto (quase preto) */
+  padding: 0.5rem 0; /* Espaçamento vertical */
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer; /* Adiciona cursor de clique para o dropdown */
+}
+
+.navLink:hover {
+  color: #ff7900; /* Cor laranja da paleta no hover */
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff7900;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* NOVO: Estilos do Dropdown */
+
+.dropdownContainer {
+  position: relative;
+  height: 100%; /* Garante que o hover funcione em toda a altura */
+  display: flex;
+  align-items: center;
+}
+
+.dropdownToggle {
+    /* Mantém o estilo do link, mas pode ser diferenciado */
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%; /* Posiciona abaixo do item do menu */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza o menu abaixo do texto */
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  min-width: 250px;
+  z-index: 20; /* Fica acima de todo o conteúdo */
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownItem {
+  color: #161616;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  white-space: nowrap; /* Impede a quebra de linha dos nomes dos produtos */
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+  color: #ff7900;
+}
+
+/* ... (Estilos para o menu responsivo permanecem iguais) ... */

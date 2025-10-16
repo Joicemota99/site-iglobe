@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={styles.footerGrid}>
           {/* Coluna 1: Logo e Descrição */}
           <div className={styles.footerColumn}>
-            <Link href="/" className={styles.logoLink}>
+            <Link href="/sobre-nos" className={styles.logoLink}>
               <Image
                 src="/logo-principal-laranja-branco.svg" // Troque por sua logo
                 alt="Logo Igloobe"
@@ -23,13 +23,13 @@ const Footer = () => {
               Internet ultrarrápida, segura e confiável. Conecte-se com tecnologia e agilidade.
             </p>
             <div className={styles.socialIcons}>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/iglobetecnologia?igsh=dXJmOXRkempwZWZ5" target="_blank" rel="noopener noreferrer">
                 <Image src="/icons8-instagram.svg" alt="Instagram" width={24} height={24} />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <Image src="/icons8-facebook.svg" alt="Facebook" width={24} height={24} />
               </a>
-              <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
                 <Image src="/icons8-whatsapp-laranja.svg" alt="WhatsApp" width={24} height={24} />
               </a>
             </div>
@@ -39,10 +39,10 @@ const Footer = () => {
           <div className={styles.footerColumn}>
             <h4 className={styles.columnTitle}>Navegação</h4>
             <ul className={styles.footerNav}>
-              <li><Link href="/planos" className={styles.footerLink}>Planos</Link></li>
+              <li><Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.footerLink}>Planos</Link></li>
               <li><Link href="/sobre-nos" className={styles.footerLink}>Sobre Nós</Link></li>
-              <li><Link href="/contato" className={styles.footerLink}>Contato</Link></li>
-              <li><Link href="/suporte" className={styles.footerLink}>Suporte</Link></li>
+              <li><Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.footerLink}>Contato</Link></li>
+              <li><Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.footerLink}>Suporte</Link></li>
             </ul>
           </div>
 
@@ -50,8 +50,8 @@ const Footer = () => {
           <div className={styles.footerColumn}>
             <h4 className={styles.columnTitle}>Contato</h4>
             <address className={styles.contactInfo}>
-              <p>Av. Exemplo, 123 - Centro<br />Salvador, BA 40000-000</p>
-              <p>Telefone: (71) 98795-5190</p>
+              <p>R. Comendador Bastos, 120 - Mares<br />Salvador, BA 40445-110</p>
+              <p>Telefone: (71) 3190-0813</p>
               <p>Email: contato@igloobe.com.br</p>
             </address>
           </div>
@@ -60,8 +60,8 @@ const Footer = () => {
           <div className={styles.footerColumn}>
             <h4 className={styles.columnTitle}>Informações Legais</h4>
             <ul className={styles.footerNav}>
-              <li><Link href="/termos-de-uso" className={styles.footerLink}>Termos de Uso</Link></li>
-              <li><Link href="/politica-de-privacidade" className={styles.footerLink}>Política de Privacidade</Link></li>
+              <li><Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.footerLink}>Termos de Uso</Link></li>
+              <li><Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.footerLink}>Política de Privacidade</Link></li>
             </ul>
           </div>
         </div>

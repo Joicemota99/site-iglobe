@@ -36,7 +36,7 @@ const Hero = () => {
           >
             Fale via WhatsApp
           </a>
-          <Link href="/planos" className={styles.secondaryLink}>
+          <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.secondaryLink}>
             Conheça os Planos
           </Link>
         </div>

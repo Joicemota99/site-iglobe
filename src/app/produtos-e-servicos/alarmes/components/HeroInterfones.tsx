@@ -8,7 +8,7 @@ const HeroInternet = () => {
   return (
     <section className={styles.heroSection}>
       <Image
-        src="/hero-internet.jpg" // Troque por sua imagem de fundo
+        src="/alarmes-google.jpg" // Troque por sua imagem de fundo
         alt="Pessoa jogando em um setup de tecnologia"
         layout="fill"
         objectFit="cover"
@@ -26,7 +26,7 @@ const HeroInternet = () => {
             Agilidade, preço justo e confiança local.
           </p>
           <Link 
-            href="https://wa.me/5571987955190" 
+            href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" 
             target="_blank" 
             rel="noopener noreferrer" 
             className={styles.whatsappButton}

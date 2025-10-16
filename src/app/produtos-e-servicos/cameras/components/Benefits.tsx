@@ -20,7 +20,7 @@ const Benefits = () => {
               <h3 className={styles.cardTitle}>
                 Imagens em alta definição e acesso remoto pelo celular
               </h3>
-              <Link href="/planos" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
             </div>
@@ -40,7 +40,7 @@ const Benefits = () => {
               <h3 className={styles.cardTitle}>
                Atendimento consultivo e suporte técnico local
               </h3>
-              <Link href="/contato" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
             </div>
@@ -60,7 +60,7 @@ const Benefits = () => {
               <h3 className={styles.cardTitle}>
                Instalação descomplicada e sem papelada
               </h3>
-              <Link href="/suporte" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
             </div>

@@ -31,7 +31,7 @@ const Plans = () => {
                 <span className={styles.priceValue}>{plan.price}</span>
                 mês
               </p>
-              <Link href="/contratar" className={styles.planButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.planButton}>
                 ASSINE AGORA
               </Link>
             </div>

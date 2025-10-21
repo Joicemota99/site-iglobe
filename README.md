@@ -186,4 +186,4 @@ O projeto utiliza o App Router do Next.js para organizar as páginas:
 
 Este projeto está licenciado sob a Licença MIT. Sinta-se à vontade para inspecionar, aprender e usar o código em seus próprios estudos e projetos.
 
-**Copyright (c) [Ano Atual] [Seu Nome ou Nome da Sua Empresa]**
+**Copyright (c) [2025] [Joice Mota]**

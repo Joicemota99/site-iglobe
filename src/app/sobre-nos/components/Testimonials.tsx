@@ -58,7 +58,7 @@ const Testimonials = () => {
         </div>
 
         <div className={styles.ctaButtonContainer}>
-          <Link href="/avaliar" className={styles.ctaButton}>
+          <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.ctaButton}>
             Avalie-nos também
           </Link>
         </div>

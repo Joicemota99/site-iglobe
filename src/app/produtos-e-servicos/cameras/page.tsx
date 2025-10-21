@@ -12,8 +12,8 @@ export default function InterfonesPage() {
       <Header />
       <HeroInterfones />
       <Benefits />
-      <InterfonesCTA />
       <Testimonials />
+      <InterfonesCTA />
       <Footer />
     </main>
   );

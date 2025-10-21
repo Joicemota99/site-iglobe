@@ -15,66 +15,60 @@ const Benefits = () => {
         <div className={styles.cardsContainer}>
           {/* Card 1 */}
           <div className={styles.card}>
+            <Image
+              src="/card-image-1.png"
+              alt="Internet rápida e estável"
+              fill
+              className={styles.cardImage}
+            />
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>
                 Internet <br />
                 Rápida <br />
                 e Estável
               </h3>
-              <Link href="/planos" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
-            </div>
-            <div className={styles.imageContainer}>
-              <Image
-                src="/card-image-1.png" // Troque pela sua imagem
-                alt="Internet rápida e estável"
-                layout="fill"
-                objectFit="cover"
-              />
             </div>
           </div>
 
           {/* Card 2 */}
           <div className={styles.card}>
+            <Image
+              src="/Benefits-02-about.png"
+              alt="Atendimento em até 24h"
+              fill
+              className={styles.cardImage}
+            />
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>
                 Atendimento <br />
                 em até 24h
               </h3>
-              <Link href="/contato" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
-            </div>
-            <div className={styles.imageContainer}>
-              <Image
-                src="/card-image-2.jpg" // Troque pela sua imagem
-                alt="Atendimento em até 24h"
-                layout="fill"
-                objectFit="cover"
-              />
             </div>
           </div>
 
           {/* Card 3 */}
           <div className={styles.card}>
+            <Image
+              src="/Benefits-about-3.png"
+              alt="Suporte técnico via WhatsApp"
+              fill
+              className={styles.cardImage}
+            />
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>
                 Suporte <br />
                 técnico via <br />
                 WhatsApp
               </h3>
-              <Link href="/suporte" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
-            </div>
-            <div className={styles.imageContainer}>
-              <Image
-                src="/card-image-3.jpg" // Troque pela sua imagem
-                alt="Suporte técnico via WhatsApp"
-                layout="fill"
-                objectFit="cover"
-              />
             </div>
           </div>
         </div>

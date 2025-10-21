@@ -1,25 +1,39 @@
+"use client"; // Esta linha transforma o componente em Client Component
+
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Header.module.css';
 
 const Header = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleMouseEnter = () => setIsDropdownOpen(true);
+  const handleMouseLeave = () => setIsDropdownOpen(false);
+
+  // Lista dos seus serviços (para o Dropdown)
+  const services = [
+    { name: 'Internet Fibra Óptica', href: '/produtos-e-servicos/internet' },
+    { name: 'Interfones Inteligentes', href: '/produtos-e-servicos/Interfones' },
+    { name: 'Câmeras de Segurança', href: '/produtos-e-servicos/cameras' },
+    { name: 'Alarmes Modernos', href: '/produtos-e-servicos/alarmes' },
+  ];
+
   return (
-    <header className="bg-white shadow-md">
-      {/* O contêiner principal agora tem 3 colunas implícitas para Desktop:
-          [Logo + Menu] [Espaço flexível] [Contato] */}
-      <div className="container mx-auto flex items-center justify-between p-4">
+    <header className="bg-white shadow-md z-10 relative">
+      {/* Replicando o padding e espaçamento do código antigo */}
+      <div className="container mx-auto flex items-center justify-between px-4 py-4">
         
-        {/* Grupo Esquerdo: Logo e Menu */}
-        <div className="flex items-center space-x-30 px-20">
+        {/* Grupo Esquerdo: Logo e Menu (usando classes customizadas para replicar o espaçamento "space-x-30 px-20" do código antigo) */}
+        <div className="flex items-center space-x-45 px-10">
           {/* Logo */}
-          <Link href="/">
+          <Link href="/sobre-nos">
             <Image
               src="/logo-principal-slogan-azul.svg" 
               alt="Logo Igloobe"
               width={120}
               height={40}
-              className="h-12 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
 
@@ -28,30 +42,50 @@ const Header = () => {
             <Link href="/sobre-nos" className={styles.navLink}>
               Sobre nós
             </Link>
-            <Link href="/produtos-e-servicos" className={styles.navLink}>
-              Produtos e serviços
-            </Link>
-            <Link href="/planos" className={styles.navLink}>
+            
+            {/* Dropdown: Item 'Produtos e serviços' */}
+            <div
+              className={styles.dropdownContainer}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className={`${styles.navLink} ${styles.dropdownToggle}`}>
+                Produtos e serviços
+              </div>
+              
+              {isDropdownOpen && (
+                <div className={styles.dropdownMenu}>
+                  {services.map(service => (
+                    <Link key={service.name} href={service.href} className={styles.dropdownItem}>
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+            
+            <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.navLink}>
               Planos
             </Link>
           </nav>
         </div>
         
-        {/* Grupo Direito: Informações de contato e localização (Visível a partir do lg) */}
+        {/* Grupo Direito: Contato Simplificado (WhatsApp) */}
         <div className="flex items-center space-x-4">
           <div className="hidden lg:flex items-center space-x-1">
-            <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0">
-            <Image
-              src="/icons8-whatsapp.svg" 
-              alt="Logo Igloobe"
-              width={120}
-              height={40}
-              className="h-5 w-auto"
-            />
-          </Link>
+             <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/icons8-whatsapp.svg" 
+                alt="Ícone WhatsApp"
+                width={20}
+                height={20}
+                className="h-5 w-auto"
+              />
+            </Link>
             <span className="text-lg font-bold text-gray-800 px-2">71 98795-5190</span>
           </div>
-          {/* Botão de menu para telas pequenas */}
+
+          {/* Botão de menu para telas pequenas (Manter) */}
           <button className="md:hidden text-gray-800 focus:outline-none">
             {/* Ícone de hambúrguer */}
             <svg

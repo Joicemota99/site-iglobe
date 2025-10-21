@@ -5,7 +5,7 @@ import styles from './InterfonesCTA.module.css';
 const InterfonesCTA = () => {
   return (
     <section className={styles.ctaSection}>
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-35 py-16">
         <h2 className={styles.title}>
           Instale seu interfone com quem entende do <br />
           assunto. Orçamento grátis pelo WhatsApp.
@@ -13,7 +13,7 @@ const InterfonesCTA = () => {
 
         <div className={styles.buttonWrapper}>
           <Link
-            href="https://wa.me/5571987955190" // Número de contato do cliente
+            href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" // Número de contato do cliente
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaButton}

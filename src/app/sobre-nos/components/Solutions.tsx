@@ -39,7 +39,7 @@ const Solutions = () => {
               <p className={styles.mainCardText}>
                 Planos de internet rápidos e práticos para instalar sem burocracia, direto pelo WhatsApp.
               </p>
-              <Link href="/planos" className={styles.mainCardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.mainCardButton}>
                 Saiba mais
               </Link>
               

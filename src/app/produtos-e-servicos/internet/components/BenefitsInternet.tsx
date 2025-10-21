@@ -22,13 +22,13 @@ const BenefitsInternet = () => {
                 e de alta <br />
                 velocidade
               </h3>
-              <Link href="/planos" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src="/card-internet-1.jpg" // Troque pela sua imagem
+                src="/card-image-1.png" // Troque pela sua imagem
                 alt="Internet estável"
                 layout="fill"
                 objectFit="cover"
@@ -45,13 +45,13 @@ const BenefitsInternet = () => {
                 contratação <br />
                 fácil
               </h3>
-              <Link href="/planos" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src="/card-internet-2.jpg" // Troque pela sua imagem
+                src="/benefits-internet-2.png" // Troque pela sua imagem
                 alt="Contratação fácil"
                 layout="fill"
                 objectFit="cover"
@@ -67,13 +67,13 @@ const BenefitsInternet = () => {
                 de crédito ou <br />
                 papelada
               </h3>
-              <Link href="/contratar" className={styles.cardButton}>
+              <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.cardButton}>
                 Saiba mais
               </Link>
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src="/card-internet-3.jpg" // Troque pela sua imagem
+                src="/benefits-internet.png" // Troque pela sua imagem
                 alt="Sem análise de crédito"
                 layout="fill"
                 objectFit="cover"

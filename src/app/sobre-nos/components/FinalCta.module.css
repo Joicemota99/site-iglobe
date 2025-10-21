@@ -1,8 +1,50 @@
-/* src/app/sobre-nos/FinalCTA.module.css */
+/* src/app/sobre-nos/FinalCta.module.css */
 
 .ctaSection {
   background-color: #f9f5f2; /* Cor clara da paleta */
   color: #161616; /* Cor escura da paleta */
+}
+
+/* Wrapper para o layout de duas colunas */
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .contentWrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Estilos da Coluna de Texto */
+.textColumn {
+  flex: 1;
+}
+
+/* Estilos da Coluna da Imagem */
+.imageColumn {
+  flex: 1;
+  position: relative; /* OBRIGATÓRIO para a imagem 'fill' */
+  height: 400px; /* Mantém a altura para a imagem se ajustar */
+  overflow: hidden;
+  /* Removidos: border-radius e box-shadow se não forem desejados para uma logo */
+}
+
+@media (max-width: 1023px) {
+  .imageColumn {
+    display: none; /* Oculta a imagem em telas menores que 1024px */
+  }
+}
+
+/* Estilos da Imagem (AJUSTADO PARA LOGO) */
+.ctaImage {
+  object-fit: contain; /* ALTERADO: A imagem se ajusta sem ser cortada */
+  object-position: center; /* Centraliza a imagem dentro do espaço */
+  padding: 1rem; /* Opcional: Adiciona um pequeno respiro interno se a logo estiver muito colada */
 }
 
 .title {
@@ -10,6 +52,12 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
 }
 
 .benefitsList {

@@ -1,8 +1,55 @@
 /* src/app/produtos-e-servicos/interfones/InterfonesCTA.module.css */
 
 .ctaSection {
-  background-color: #161616; /* Cor escura da paleta */
-  color: white;
+  background-color: #f9f5f2; /* Cor clara da paleta (Off-White) */
+  color: #161616;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* LAYOUT DE DUAS COLUNAS NO DESKTOP */
+@media (min-width: 1024px) {
+  .contentWrapper {
+    flex-direction: row;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between;
+    gap: 4rem;
+  }
+}
+
+.imageColumn {
+  display: none; /* Escondido por padrão em mobile */
+}
+
+@media (min-width: 1024px) {
+  .imageColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 30%; /* 30% da largura para a coluna da logo */
+    min-height: 250px;
+    padding: 2rem;
+    background-color: #04169e; /* Fundo azul para a logo em destaque */
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(4, 22, 158, 0.4);
+  }
+}
+
+.logoImage {
+  /* No desktop, a logo fica branca sobre o fundo azul para contraste */
+  filter: brightness(0) invert(1);
+  width: 200px;
+  height: 80px;
+  object-fit: contain; /* Garante que a logo não seja cortada */
+}
+
+.textColumn {
+  flex: 1; /* Ocupa o restante do espaço */
 }
 
 .title {
@@ -23,26 +70,24 @@
 }
 
 .ctaButton {
-  background-color: #04169e; /* Cor azul da paleta */
+  background-color: #ff7900; /* Cor Laranja para destaque */
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  /* Garante o alinhamento do ícone */
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 121, 0, 0.4); /* Sombra laranja */
 }
 
 .ctaButton:hover {
-  background-color: #0022d1; /* Tom de azul ligeiramente mais claro */
+  background-color: #e66a00; /* Laranja mais escuro */
 }
 
 .whatsappIcon {
-  /* Altera a cor do ícone SVG para branco */
   stroke: white;
   width: 1.25rem;
   height: 1.25rem;

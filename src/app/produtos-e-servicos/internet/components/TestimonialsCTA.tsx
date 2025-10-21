@@ -27,7 +27,7 @@ const TestimonialsCTA = () => {
             <div className={styles.testimonialCard}>
               <div className={styles.authorImage}>
                 <Image
-                  src="/testimonial-1.jpg" // Troque pela sua imagem
+                  src="/Leandro.png" // Troque pela sua imagem
                   alt="Foto de Leandro"
                   layout="fill"
                   objectFit="cover"
@@ -43,7 +43,7 @@ const TestimonialsCTA = () => {
             <div className={styles.testimonialCard}>
               <div className={styles.authorImage}>
                 <Image
-                  src="/testimonial-2.jpg" // Troque pela sua imagem
+                  src="/Mariana.png" // Troque pela sua imagem
                   alt="Foto de Mariana Lopes"
                   layout="fill"
                   objectFit="cover"
@@ -59,27 +59,9 @@ const TestimonialsCTA = () => {
         </div>
 
         <div className={styles.ctaButtonRow}>
-          <Link href="/avaliar" className={styles.ctaButton}>
+          <Link href="https://api.whatsapp.com/send/?phone=5571987955190&text&type=phone_number&app_absent=0" className={styles.ctaButton}>
             Avalie-nos também →
           </Link>
-        </div>
-
-        {/* Seção de Chamada para Ação */}
-        <div className={styles.finalCta}>
-          <div className={styles.finalCtaContent}>
-            <h3 className={styles.finalCtaTitle}>
-              Chega de lentidão. Contrate agora sua <br />
-              internet com a IGLOBE.
-            </h3>
-            <Link
-              href="https://wa.me/5571987955190"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.whatsappButton}
-            >
-              ASSINE AGORA
-            </Link>
-          </div>
         </div>
       </div>
     </section>
